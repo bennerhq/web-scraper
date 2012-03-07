@@ -1,0 +1,51 @@
+# -----------------------------------------------------------
+# URL's
+#
+url.start=http://www.nemlig.com/forside.aspx
+url.base=http://www.nemlig.com
+
+# -----------------------------------------------------------
+# HREF search
+#
+value.find=ul[id="maincategorynavlist"]
+value.find+=li
+value.href=a
+
+value.find=div[class="scroll-content"]
+value.find+=div[class^="scroll-content-item"]
+value.href=a
+
+value.find=div[id="content-main"]
+value.find+=div[class="product-image"]
+value.href=a
+
+# -----------------------------------------------------------
+# TAG
+#
+tag.find=h1[class="product-name"]
+tag.type=inner
+tag.name=name
+
+tag.find=div[class^="product-text"]
+tag.type=inner
+tag.name=detail
+
+tag.find=div[class="product-price"]
+tag.type=inner
+tag.name=price
+
+tag.find=div[class="product-price-kilo"]
+tag.type=plain
+tag.name=quantity
+
+tag.find=div[class="product-description"]
+tag.type=inner
+tag.name=info
+
+tag.find=div[class="product-image left relative"]
+tag.type=next
+
+tag.find=img
+tag.type=attribute
+tag.attribute=src
+tag.name=image
