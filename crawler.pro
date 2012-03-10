@@ -10,16 +10,19 @@ TARGET = crawler
 #TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    crawler.cpp \
-    website.cpp \
-    starter.cpp
+SOURCES += \
+        src/main.cpp\
+        src/mainwindow.cpp \
+        src/crawler.cpp \
+        src/website.cpp \
+        src/starter.cpp
 
-HEADERS  += mainwindow.h \
-    crawler.h \
-    main.h \
-    website.h \
-    starter.h
+HEADERS  += \
+        include/mainwindow.h \
+        include/crawler.h \
+        include/main.h \
+        include/website.h \
+        include/starter.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+        forms/mainwindow.ui
